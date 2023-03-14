@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <style>
+    body{
+         background-color:aqua;
+         color: black;
+         font-size:19px;
+        
+        
+         }
+   .contianer{ position: relative;
+         width:100%;
+         height:100%;
+        
+             }
+   .section{
+        position: absolute;
+        width:60%;
+        top:30%;
+        left:20%;
+        }
+
+  </style>
+<div class="container">
+<div class="section">
+<h2>Welcome!</h2>
+<div id="01"><h5>Let me take you on a ride with colors.</h5></div>
+<div id="02"><p>Let's go.</p></div>
+
+<p id="demo"></p>
+<p id="dem"></p>
+<div class="box">
+<button onclick="myFunction()">Red</button>
+<button onclick="myBlue()">Blue</button>
+<button onclick="myYellow()">Yellow</button>
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  $("body").css("background-color","red");
+  $("body").css("color","white");
+  $("#01").remove();
+  $("h2").remove();
+  $("#02").remove();
+  $("#demo").html("<h1>Red!</h1>");
+  $("#dem").html("<p>Red is the color of love, passion, and energy. It is often used to represent love and romance, as well as danger and warning signs.<br>Studies have shown that the color red can increase heart rate, blood pressure, and appetite, and is associated with excitement and strong emotions.<br>In some cultures, red is considered a lucky or auspicious color, while in others it is associated with evil or bad luck.</p>");
+}
+function myBlue() {
+  $("body").css("background-color","blue");
+  $("body").css("color","white");
+  $("#01").remove();
+  $("h2").remove();
+  $("#02").remove();
+  $("#demo").html("<h1>Blue!</h1>");
+  $("#dem").html("<p>Blue is the color of the sky and the ocean, and is often associated with calmness, stability, and trustworthiness.<br>Studies have shown that the color blue can lower heart rate and blood pressure, and is associated with feelings of calm and relaxation.<br>Blue is the most commonly used color in corporate logos, and is often associated with professionalism and reliability.</p>");
+}
+function myYellow() {
+  $("body").css("background-color","yellow");
+  $("body").css("color","black");
+  $("#01").remove();
+  $("h2").remove();
+  $("#02").remove();
+  $("#demo").html("<h1>Yellow!</h1>");
+  $("#dem").html("<p>Yellow is the color of sunshine and happiness, and is often associated with optimism, joy, and warmth.<br>Studies have shown that the color yellow can increase energy levels and mental agility, and is associated with positive emotions and creativity.<br>Yellow is often used in warning signs and caution tape, as well as in<br> advertising and marketing to grab attention.</p>");
+}
+</script>
+
+
+</body>
+</html>
